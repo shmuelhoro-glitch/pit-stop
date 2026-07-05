@@ -1,9 +1,7 @@
-import { saveDataToFile,splitDataForPrint } from "./raceService.js"
+import { findCarById, saveDataToFile,splitDataForPrint } from "./raceService.js"
 
 
-// saveDataToFile()
-// .then('success')
-// .catch('error')
+
 
 
 function showEnterMenu(){
@@ -18,4 +16,9 @@ function main(){
     saveDataToFile()
     showEnterMenu()
     splitDataForPrint()
+    findCarById(44)
+    findCarById(99)
+    
 }
+
+main()
